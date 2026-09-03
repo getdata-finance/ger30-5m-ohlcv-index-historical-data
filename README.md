@@ -1,10 +1,10 @@
-# GER30 5m OHLCV Stock index Historical Data — Free Sample
+# GER30 5m OHLCV Index Historical Data — Free Sample
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-906_111_rows-blue)](https://getdata.finance/datasets/ger30) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/ger30)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-466_665_rows-blue)](https://getdata.finance/datasets/ger30) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/ger30)
 
 ### -> [**Download the full GER30 dataset on getdata.finance**](https://getdata.finance/datasets/ger30)
 
-**GER30 5m OHLCV stock index historical data** — ultra high-quality 5m OHLCV for **Germany 30 (DAX)**. Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only. Clean `datetime, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
+**GER30 5m OHLCV index historical data** — ultra high-quality 5m OHLCV for **DAX 40 (GER30)**. Clean `time, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
 
 ## Table of contents
 
@@ -21,14 +21,13 @@
 
 ## Why this dataset?
 
-- **Ultra high-quality 5m OHLCV** for **Germany 30 (DAX)** (Stock index)
-- **Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only**
-- **Clean CSV schema** — `datetime, open, high, low, close, volume` (no gaps in formatting)
-- **Free evaluation sample** on GitHub (`5m`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/ger30) · **906,111** `1m` rows in the full archive
+- **Ultra high-quality 5m OHLCV** for **DAX 40 (GER30)** (Index)
+- **Clean CSV schema** — `time, open, high, low, close, volume` (no gaps in formatting)
+- **Free evaluation sample** on GitHub (`5m`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/ger30) · **466,665** `5m` rows in the full archive
 - Built for **backtesting**, **algorithmic trading** and **quantitative finance** workflows
 - **Weekly refresh** — [getdata.finance](https://getdata.finance) every **Saturday, 8am UTC+0**; GitHub `5m` sample updated in sync
 
-> **Sample on GitHub** · `GER30_5m.csv` (30,879 rows, `2026-01-28` -> `2026-07-31`). **Full archive on [getdata.finance](https://getdata.finance/datasets/ger30)** — **906,111** `1m` rows (~59.74 MB), **11 timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W), `2008-09-10` -> `2026-07-31`.
+> **Sample on GitHub** · `GER30_5m.csv` (11,099 rows, `2026-06-26` -> `2026-09-02`, 1.05 MB). **Full archive on [getdata.finance](https://getdata.finance/datasets/ger30)** — **466,665** `5m` rows (full `1m`: 2,331,838), **11 timeframes**, `2019-01-02` -> `2026-09-02`.
 
 ## Download sample
 
@@ -44,11 +43,11 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 | | **Sample (this repo)** | **Full dataset ([getdata.finance](https://getdata.finance/datasets/ger30))** |
 |---|--:|---|
-| Instrument | Germany 30 (DAX) · Stock index | Germany 30 (DAX) · Stock index |
+| Instrument | DAX 40 (GER30) · Index | DAX 40 (GER30) · Index |
 | Timeframes | `5m` (sample) | **11** — 1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W |
-| 1m rows | 30,879 | **906,111** |
-| Size | 2.61 MB | ~59.74 MB |
-| Period | `2026-01-28` -> `2026-07-31` | `2008-09-10` -> `2026-07-31` |
+| 5m rows | 11,099 | **466,665** |
+| Size | 1.05 MB | full ZIP on [getdata.finance](https://getdata.finance/datasets/ger30) |
+| Period | `2026-06-26` -> `2026-09-02` | `2019-01-02` -> `2026-09-02` |
 | File | `GER30_5m.csv` | ZIP on [getdata.finance](https://getdata.finance/datasets/ger30) |
 | Coverage report | — | [GER30 coverage](https://getdata.finance/coverage/ger30) |
 | Updates | Weekly (Saturday, 8am UTC+0) — GitHub sample | Weekly (Saturday, 8am UTC+0) — all timeframes |
@@ -57,7 +56,7 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 This GitHub repository ships a **`5m` evaluation sample** only. On **[getdata.finance](https://getdata.finance/datasets/ger30)**, each full asset archive is delivered as a ZIP with **11 gap-free OHLCV timeframes** (one CSV per timeframe):
 
-**1m** · **3m** · **5m** · **15m** · **30m** · **1H** · **4H** · **12H** · **1D** · **3D** · **1W**
+**1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W**
 
 GitHub = `5m` sample · [getdata.finance](https://getdata.finance/datasets/ger30) = all **11** timeframes above for the same instrument.
 
@@ -74,29 +73,29 @@ First and latest rows from the GitHub sample **`GER30_5m.csv`**:
 
 **First rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-01-28T05:15:00+00:00 | 24934.27 | 24943.02 | 24934.26 | 24941.01 | 34 |
-| 2026-01-28T05:20:00+00:00 | 24941.01 | 24949.51 | 24940.25 | 24940.52 | 60 |
-| 2026-01-28T05:25:00+00:00 | 24940.52 | 24942.02 | 24935.26 | 24939.02 | 38.6958146487 |
-| 2026-01-28T05:30:00+00:00 | 24939.02 | 24942 | 24938 | 24939.01 | 55 |
-| 2026-01-28T05:35:00+00:00 | 24939.01 | 24949.52 | 24938.52 | 24949.02 | 74 |
+| 2026-06-26T13:10:00+00:00 | 24614.64 | 24622.14 | 24604.12 | 24615.12 | 1382 |
+| 2026-06-26T13:15:00+00:00 | 24615.12 | 24616.14 | 24536.14 | 24562.12 | 4059 |
+| 2026-06-26T13:20:00+00:00 | 24562.12 | 24604.63 | 24559.12 | 24585.14 | 3585 |
+| 2026-06-26T13:25:00+00:00 | 24585.14 | 24598.64 | 24574.63 | 24596.12 | 2579 |
+| 2026-06-26T13:30:00+00:00 | 24596.12 | 24635.64 | 24586.12 | 24602.12 | 5648 |
 
 **Last rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-31T19:35:00+00:00 | 25664.58 | 25670.1 | 25658.58 | 25669.08 | 435 |
-| 2026-07-31T19:40:00+00:00 | 25669.08 | 25682.1 | 25668.58 | 25681.1 | 446 |
-| 2026-07-31T19:45:00+00:00 | 25681.1 | 25685.59 | 25673.1 | 25678.58 | 546 |
-| 2026-07-31T19:50:00+00:00 | 25678.58 | 25688.6 | 25672.6 | 25687.1 | 574 |
-| 2026-07-31T19:55:00+00:00 | 25687.1 | 25687.1 | 25644.34 | 25652.35 | 936 |
+| 2026-09-02T01:40:00+00:00 | 25827.28 | 25840.78 | 25826.76 | 25833.78 | 394 |
+| 2026-09-02T01:45:00+00:00 | 25833.78 | 25835.78 | 25821.27 | 25825.26 | 432 |
+| 2026-09-02T01:50:00+00:00 | 25825.26 | 25831.78 | 25819.26 | 25827.76 | 593 |
+| 2026-09-02T01:55:00+00:00 | 25827.76 | 25835.78 | 25820.78 | 25827.77 | 459 |
+| 2026-09-02T02:00:00+00:00 | 25827.77 | 25827.78 | 25825.76 | 25826.26 | 43 |
 
 ## Schema
 
 | Column | Description |
 | --- | --- |
-| `datetime` | Bar open timestamp (UTC, ISO-8601). |
+| `time` | Bar open timestamp (UTC, ISO-8601). |
 | `open` | Opening price of the candlestick bar. |
 | `high` | Highest price during the bar. |
 | `low` | Lowest price during the bar. |
@@ -104,7 +103,7 @@ First and latest rows from the GitHub sample **`GER30_5m.csv`**:
 | `volume` | Tick volume (number of price updates) during the bar. |
 
 ```text
-datetime,open,high,low,close,volume
+time,open,high,low,close,volume
 ```
 
 ## Code examples
@@ -114,11 +113,9 @@ datetime,open,high,low,close,volume
 ```python
 import pandas as pd
 
-df = pd.read_csv('GER30_5m.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('GER30_5m.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 print(df.describe())
-print(df.resample('1h').agg({'open': 'first', 'high': 'max',
-                              'low': 'min', 'close': 'last', 'volume': 'sum'}).head())
 ```
 
 ### backtrader
@@ -127,8 +124,8 @@ print(df.resample('1h').agg({'open': 'first', 'high': 'max',
 import backtrader as bt
 import pandas as pd
 
-df = pd.read_csv('GER30_5m.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('GER30_5m.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 
 class PandasData(bt.feeds.PandasData):
     params = (('datetime', None), ('open', 'open'), ('high', 'high'),
@@ -146,20 +143,20 @@ cerebro.adddata(PandasData(dataname=df))
 import pandas as pd
 import vectorbt as vbt
 
-df = pd.read_csv('GER30_5m.csv', parse_dates=['datetime'])
-close = df.set_index('datetime')['close']
+df = pd.read_csv('GER30_5m.csv', parse_dates=['time'])
+close = df.set_index('time')['close']
 fast, slow = vbt.MA.run(close, 10), vbt.MA.run(close, 50)
 entries = fast.ma_crossed_above(slow)
 exits = fast.ma_crossed_below(slow)
-pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='1min')
+pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='5min')
 print(pf.stats())
 ```
 
 ## Download full data
 
-The complete **GER30** archive on **[getdata.finance](https://getdata.finance/datasets/ger30)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **906,111** rows at `1m`, plus all other timeframes in the same ZIP.
+The complete **GER30** archive on **[getdata.finance](https://getdata.finance/datasets/ger30)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **466,665** rows at `5m`, plus all other timeframes in the same ZIP.
 
 **[-> Get the full GER30 dataset on getdata.finance](https://getdata.finance/datasets/ger30)**
 
 ---
-*GetData · GER30 5m OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/ger30) · 2026-08-04 UTC*
+*GetData · GER30 5m OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/ger30)*
